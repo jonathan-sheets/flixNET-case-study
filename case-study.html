@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="case-study.css">
+
+    <title>flixNET Case Study</title>
+  </head>
+  <body>
+    <h1 class="container text-center text-decoration-underline">flixNET Project Case Study</h1>
+    <div class="container">
+      <div class="row main-columns">
+        <div class="col-md leftColumn">
+          <h2>Overview</h2>
+            <p>
+              FlixNET is the front end of a web application that provides users with access to a variety of information in a database of movies.
+              The database is part of a REST API I built as an earlier project.  Users can create a profile, update their personal information, and add/remove movies from their list of favorites.
+            </p>
+          <h2>Purpose and Context</h2>
+            <p>
+              This project was part of my curriculum at Career Foundry.  Its purpose was to help demonstrate my understanding of development using the MERN tech stack.
+            </p>
+          <h2>Objective</h2>
+            <p>
+              The objective for this project was to create a fully functional application that used the MERN tech stack.  I built the entire application from scratch, from the server-side API and business logic to the client-side user interface.
+            </p>
+          <h2>My Process</h2>
+            <figure>
+              <img src="./img/postman-login-auth.png" id="img2" class="img-fluid rounded" alt="login endpoint testing with Postman screenshot">
+              <figcaption>Example of endpoint testing in Postman.  Click to enlarge.</figcaption>
+          </figure>
+            <h4>Client-Side</h4>
+              <p>
+                The next step in building this application was to create the client-side and have it interact with the API.  This took me longer than I expected, partly because it was my first experience using React.  The code structure and JSX syntax took some time for me to get accustomed to.
+              </p>
+              <p>
+                Something that I struggled with during this portion of the project was wrapping my head around application state and using props.  I used Redux for state management and while it is a powerful tool, it was very hard for me to learn.  In fact, I am still using various resources to better cement my understanding of these concepts.  
+              </p>
+              <p>
+                Another challenge for me was trying to implement real-time form validation for the login, registration, and profile update forms.  I attempted this without using an external library.  I was able to get the form validation working, but not as well as I would like.  In fact, as a future improvement to this application I will implement this feature using the react-real-time-form-validation library.
+              </p>
+              <p>
+                This project took me about three weeks to complete since it was my first attempt at using these libraries.
+              </p>
+        </div>
+        <div class="col-md">
+          <figure>
+            <img src="./img/user-login.png" id="img1" class="img-fluid rounded" alt="User login view">
+            <figcaption>Welcome screen/login view.  Click to enlarge.</figcaption>
+          </figure>
+          <br />
+          <br />
+          <div class="serverSide">
+            <h4>Server-Side</h4>
+              <p>
+                The first step in building this application was to create the API and database of movies.  Using JavaScript, I built a RESTful API using Node.js, Express, and Mongoose that fetched data from a non-relational database that I populated using MongoDB.  The API utilizes HTTP requests including; GET, POST, PUT, and DELETE.  All responses are returned using JSON formatting.  While creating and testing the various endpoints and requests, I tested them using an application called <a href="https://www.postman.com/downloads/" target="_blank" class="postLink">Postman.</a>
+              </p>
+          </div>
+            <figure>
+              <img src="./img/movies-view.png" id="img3" class="img-fluid rounded" alt="All movies view">
+              <figcaption>Main view/all movies view.  Click to enlarge.</figcaption>
+            </figure>
+        </div>
+      </div>
+      <div class="row main-columns">
+        <div class="col-xl">
+          <h2>In Conclusion</h2>
+            <p>
+              My main takeaway from this project was how helpful libraries like React can be when making applications with multiple pages or components.  While the learning curve was a bit steep for me, I am definitely a better developer having used it.  Although, I still have much learning to do.  In the future I would like to alter the app's layout a bit, as well as change the functionality of some links.  I'd like to refine the overall appearance of the app and implement real-time form validation as I mentioned above.
+            </p>
+            <div class="demo">
+              <p>
+                If you would like to demo the app without creating an account, please use the following credentials:
+              </p>
+              <p>
+                Username: DemoUser
+              </p>
+              <p class="demoUser">
+                Password: DemoUser
+              </p>
+            </div>
+            <div class="buttons">
+              <a 
+                href="https://flixnet2020.netlify.app/" 
+                target="_blank" 
+                class="btn btn-dark" 
+                role="button"
+              >
+                Demo
+              </a>
+              <a 
+                href="https://github.com/jonathan-sheets/movie_api_client" 
+                target="_blank" 
+                class="btn btn-dark codeBtn" 
+                role="button"
+              >
+                Code
+              </a>
+              <a 
+                href="https://jonathansheets.com" 
+                target="_blank" 
+                class="btn btn-dark portfolioBtn" 
+                role="button"
+              >
+                Portfolio
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="case-study.js"></script>
+  </body>
+</html>
